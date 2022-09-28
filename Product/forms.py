@@ -1,6 +1,3 @@
-from concurrent.futures import process
-from dataclasses import fields
-from unicodedata import category
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import *

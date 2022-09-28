@@ -1,34 +1,16 @@
-from datetime import timezone
-from distutils.command.upload import upload
-import email
-from email.policy import default
 from enum import Enum
-from inspect import ArgSpec
-from itertools import product
-from multiprocessing.sharedctypes import Value
-from pydoc import visiblename
-from pyexpat import model
 from random import choices
-from sqlite3 import Date
-from sre_parse import Verbose
-from tabnanny import verbose
-from time import time
-from tkinter import CASCADE, Image
-from unicodedata import decimal, name
-from unittest.util import _MAX_LENGTH
+from unicodedata import decimal
 from urllib import request
 import uuid
-from venv import create
 from django.db import models
 from django.utils.html import format_html
-from django.utils.timezone import now
 from django.contrib.auth.models import AbstractUser
 from django.db.models.signals import pre_save
 from django.db.models.signals import m2m_changed
 from django.db.models.signals import post_save
 import decimal
 from django.utils.text import slugify
-from django.contrib.auth.decorators import login_required
 
 class User(AbstractUser):
     @property

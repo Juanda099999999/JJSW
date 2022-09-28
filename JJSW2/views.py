@@ -1,14 +1,3 @@
-from ast import Return
-import email
-from gc import get_objects
-from http.client import HTTPResponse
-from multiprocessing import context
-from pickle import GET
-import pkgutil
-from urllib import request
-from urllib.request import Request
-from webbrowser import get
-from winreg import REG_NOTIFY_CHANGE_SECURITY 
 from django.shortcuts import render 
 from django.contrib.auth import login
 from django.contrib.auth import logout
@@ -31,7 +20,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import reverse
 from django.urls import reverse_lazy
 from django.shortcuts import *
-from django.db.models.query import EmptyQuerySet
 
 
 def index(request): 
