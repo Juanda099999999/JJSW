@@ -323,7 +323,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,"static")
 STATIC_TMP = os.path.join(BASE_DIR,"static")
 
 os.makedirs(STATIC_ROOT, exist_ok=True)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 MEDIA_URL = 'media/'
 MEDIAFILES_DIRS = (
