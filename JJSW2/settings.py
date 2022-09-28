@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import JJSW2.db as db
 import os
+import dj_database_url
+
 
 
 
@@ -31,6 +33,12 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://*.jjswkairos.herokuapp.com/']
+
+try:
+    from.db import *
+except ImportError:
+    pass
+
 
 # Application definition
 
@@ -86,6 +94,10 @@ WSGI_APPLICATION = 'JJSW2.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = db.SQLITE
+
+
+DATABASES['default']= dj_database_url.config()
+
 
 
 # Password validation
@@ -321,7 +333,7 @@ STATIC_DIRS = (
 )
 
 STATIC_TMP = os.path.join(BASE_DIR,"static")
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 os.makedirs(STATIC_ROOT, exist_ok=True)
 MEDIA_URL = 'media/'
 MEDIAFILES_DIRS = (
