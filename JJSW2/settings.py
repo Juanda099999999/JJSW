@@ -335,6 +335,6 @@ os.makedirs(STATIC_ROOT, exist_ok=True)
 MEDIA_URL = "media/"
 MEDIAFILES_DIRS = (
     
-    os.path.join(BASE_DIR,"media"),
+    os.path.join(BASE_DIR,"media/"),
 
 )
