@@ -61,7 +61,7 @@ def contacto(request):
         email.fail_silently = False
         email.send()
     
-    return render(request, 'contactenos.html',{
+    return render(request, 'Contactenos.html',{
 
     })
 	 
