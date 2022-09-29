@@ -56,8 +56,9 @@ urlpatterns = [
      path('ordercomplete/',views.orderadminListView.as_view(),name="pedidoadmin"),
      path('miscomentarios/',views.ComentarioListview.as_view(),name="comentario"),
      path('Deletecomentarios/<int:pk>',views.CalificationDeleteView.as_view(),name="deletec"),
+     static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
      path('Productos/',include('Product.urls')),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
 
