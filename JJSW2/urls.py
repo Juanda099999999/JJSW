@@ -58,6 +58,6 @@ urlpatterns = [
      path('Deletecomentarios/<int:pk>',views.CalificationDeleteView.as_view(),name="deletec"),
      path('Productos/',include('Product.urls')),
 ]
-if settings.DEBUG == False:
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
