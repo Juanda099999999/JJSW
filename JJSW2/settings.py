@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import JJSW2.db as db
 import os
-import dj_database_url
+
 
 
 
@@ -31,13 +31,9 @@ SECRET_KEY = 'django-insecure-j)si2uug&(-!-p%7u_#^r*4a2+kd(w$mz2ydy(^^iwd#nt5%sx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://*.jjswkairos.herokuapp.com/']
+ALLOWED_HOSTS = ['jjswkairos.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ["https://jjswkairos.herokuapp.com"]
 
-try:
-    from.db import *
-except ImportError:
-    pass
 
 
 # Application definition
@@ -96,7 +92,6 @@ WSGI_APPLICATION = 'JJSW2.wsgi.application'
 DATABASES = db.SQLITE
 
 
-DATABASES['default']= dj_database_url.config()
 
 
 
