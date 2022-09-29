@@ -17,6 +17,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'JJSW2.settings')
 
 application = get_wsgi_application()
 
-from whitenoise.django import DjangoWhiteNoise
 
-application = DjangoWhiteNoise(application)
