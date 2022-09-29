@@ -12,7 +12,7 @@ admin.site.register(Direccion)
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     fields = ('Image','name','description','price','category')
-    list_display = ("Imagen","name","price","slug","Active")
+    list_display = ("Imagen","name","price","slug","Active","Image")
     list_editable = ("price","Active")
     list_filter = ["category","Active"]
     search_fields = ["name"]
