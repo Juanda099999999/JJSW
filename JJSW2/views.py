@@ -55,7 +55,7 @@ def contacto(request):
             subject,
             template,
             settings.EMAIL_HOST_USER,
-            ['kairos5964@gmail.com']
+            ['h0774762@gmail.com']
         )
     
         email.fail_silently = False

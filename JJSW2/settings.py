@@ -316,8 +316,8 @@ JAZZMIN_UI_TWEAKS = {
 # Enviar emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'kairos5964@gmail.com'
-EMAIL_HOST_PASSWORD = 'zonfnnkcogpmxgmi'
+EMAIL_HOST_USER = 'h0774762@gmail.com'
+EMAIL_HOST_PASSWORD = 'vwxydlauyqxugzgf'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
